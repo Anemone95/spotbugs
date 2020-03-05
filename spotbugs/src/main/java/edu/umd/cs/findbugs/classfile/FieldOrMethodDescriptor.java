@@ -19,6 +19,7 @@
 
 package edu.umd.cs.findbugs.classfile;
 
+import java.io.Serializable;
 import java.util.Objects;
 
 import edu.umd.cs.findbugs.internalAnnotations.SlashedClassName;
@@ -28,7 +29,7 @@ import edu.umd.cs.findbugs.internalAnnotations.SlashedClassName;
  *
  * @author David Hovemeyer
  */
-public abstract class FieldOrMethodDescriptor implements FieldOrMethodName {
+public abstract class FieldOrMethodDescriptor implements FieldOrMethodName, Serializable {
 
     private final @SlashedClassName String slashedClassName;
 

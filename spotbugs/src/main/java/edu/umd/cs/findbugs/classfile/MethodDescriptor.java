@@ -27,12 +27,14 @@ import edu.umd.cs.findbugs.ba.ComparableMethod;
 import edu.umd.cs.findbugs.internalAnnotations.SlashedClassName;
 import edu.umd.cs.findbugs.util.ClassName;
 
+import java.io.Serializable;
+
 /**
  * Descriptor uniquely identifying a method in a class.
  *
  * @author David Hovemeyer
  */
-public class MethodDescriptor extends FieldOrMethodDescriptor implements ComparableMethod {
+public class MethodDescriptor extends FieldOrMethodDescriptor implements ComparableMethod, Serializable {
 
     /**
      * Constructor.

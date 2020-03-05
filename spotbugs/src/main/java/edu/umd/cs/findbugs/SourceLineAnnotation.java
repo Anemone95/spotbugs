@@ -21,6 +21,7 @@ package edu.umd.cs.findbugs;
 
 import java.io.File;
 import java.io.IOException;
+import java.io.Serializable;
 import java.util.Objects;
 import java.util.Optional;
 
@@ -63,7 +64,7 @@ import javax.annotation.CheckReturnValue;
  * @author David Hovemeyer
  * @see BugAnnotation
  */
-public class SourceLineAnnotation implements BugAnnotation {
+public class SourceLineAnnotation implements BugAnnotation, Serializable {
     private static final long serialVersionUID = 1L;
 
     private static final Logger LOG = LoggerFactory.getLogger(SourceLineAnnotation.class);
