@@ -19,6 +19,7 @@
 
 package edu.umd.cs.findbugs.classfile.analysis;
 
+import java.io.Serializable;
 import java.lang.annotation.ElementType;
 import java.util.Collection;
 import java.util.Collections;
@@ -53,7 +54,7 @@ import edu.umd.cs.findbugs.util.Util;
 /**
  * @author pugh
  */
-public class MethodInfo extends MethodDescriptor implements XMethod {
+public class MethodInfo extends MethodDescriptor implements XMethod, Serializable {
 
     public static final MethodInfo[] EMPTY_ARRAY = new MethodInfo[0];
 

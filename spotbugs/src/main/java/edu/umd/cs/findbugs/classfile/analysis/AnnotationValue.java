@@ -19,6 +19,7 @@
 
 package edu.umd.cs.findbugs.classfile.analysis;
 
+import java.io.Serializable;
 import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.List;
@@ -35,7 +36,7 @@ import edu.umd.cs.findbugs.classfile.engine.asm.FindBugsASM;
  *
  * @author William Pugh
  */
-public class AnnotationValue {
+public class AnnotationValue implements Serializable {
     private final ClassDescriptor annotationClass;
 
     private final Map<String, Object> valueMap = new HashMap<>(4);
